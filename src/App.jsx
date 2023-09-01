@@ -33,6 +33,7 @@ function App() {
       </Route>
 
       <Route path='*' element={<Page404 />} />
+      
     </Routes>
     </>
   )

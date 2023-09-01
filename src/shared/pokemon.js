@@ -19,6 +19,47 @@ const bgStylePokemonType = {
 
   }
 
+  const bgImageStylePokemonType = {
+    grass: "bg-[url(/images/bg-grass.png)]",
+    bug: "bg-[url(/images/bg-bug.png)]",
+    fire: "bg-[url(/images/bg-fire.png)]",
+    water: "bg-[url(/images/bg-water.png)]",
+    normal: "bg-[url(/images/bg-normal.png)]",
+    rock: "bg-[url(/images/bg-rock.png)]",
+    fighting: "bg-[url(/images/bg-fighting.png)]",
+    poison: "bg-[url(/images/bg-poison.png)]",
+    ground: "bg-[url(/images/bg-ground.png)]",
+    ghost: "bg-[url(/images/bg-ghost.png)]",
+    steel: "bg-[url(/images/bg-steel.png)]",
+    electric: "bg-[url(/images/bg-electric.png)]",
+    psychic: "bg-[url(/images/bg-psychic.png)]",
+    ice: "bg-[url(/images/bg-ice.png)]",
+    dragon: "bg-[url(/images/bg-dragon.png)]",
+    dark: "bg-[url(/images/bg-dark.png)]",
+    fairy: "bg-[url(/images/bg-fairy.png)]",
+  }
+  /* ejemplo pero solo img */
+  const ImageStylePokemonType = {
+    grass: "/images/bg-grass.png",
+    bug: "/images/bg-bug.png",
+    fire: "/images/bg-fire.png",
+    water: "/images/bg-water.png",
+    normal: "/images/bg-normal.png",
+    rock: "/images/bg-rock.png",
+    fighting: "/images/bg-fighting.png",
+    poison: "/images/bg-poison.png",
+    ground: "/images/bg-ground.png",
+    ghost: "/images/bg-ghost.png",
+    steel: "/images/bg-steel.png",
+    electric: "/images/bg-electric.png",
+    psychic: "/images/bg-psychic.png",
+    ice: "/images/bg-ice.png",
+    dragon: "/images/bg-dragon.png",
+    dark: "/images/bg-dark.png",
+    fairy: "/images/bg-fairy.png",
+  }
+  /*aca termina mi img */
+
   const borderStylePokemonType = {
     grass: "border-[5px] border-green-800",
     bug: "border-[5px] border-green-500",
@@ -81,6 +122,8 @@ const bgStylePokemonType = {
 
   export{
     bgStylePokemonType,
+    bgImageStylePokemonType,
+    ImageStylePokemonType,
     borderStylePokemonType,
     nameStylePokemon,
     numberStylePokemon, 

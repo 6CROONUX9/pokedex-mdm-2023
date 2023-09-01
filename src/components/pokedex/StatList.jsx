@@ -6,7 +6,7 @@ export const StatList = ({ stats, type }) => {
         {
             stats?.map((stat) => <li key={stat.name}>
                 <h4 className="capitalize line-clamp-1">{stat.name}</h4>
-                <span className={`font-bold ${numberStylePokemon[type]}`}>{stat.value}</span>
+                <span className={`font-bold ${numberStylePokemon[type]} dark:${numberStylePokemon[type]}`}>{stat.value}</span>
             </li>)
         }
     </ul>

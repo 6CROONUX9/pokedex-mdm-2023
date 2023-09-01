@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import EvolutionPokemon from "../components/pokemonDetail/EvolutionPokemon";
 import { StatBarList } from "../components/pokemonDetail/StatBarList";
 import { getPokemonsById } from "../services/pokemons";
-import { bgStylePokemonType, nameStylePokemon } from "../shared/pokemon";
+import { ImageStylePokemonType, bgImageStylePokemonType, bgStylePokemonType, nameStylePokemon } from "../shared/pokemon";
 
 export const PokemonDetail = () => {
   const [pokemonData, setPokemonData] = useState(null);
@@ -17,20 +17,24 @@ export const PokemonDetail = () => {
   }, []);
 
   return (
-    <main className=" grid gap-8   max-w-[1190px] mx-auto p-2 py-28">
-      <article className="">
+    <main className={` grid gap-8 max-h-full  max-w-[1190px] mx-auto p-2 py-28 bg-neutral-200 dark:bg-neutral-700 dark:text-white`}>
+      <article >
         
         <header
-          className={` relative h-[105px] ${
-            bgStylePokemonType[pokemonData?.types[0]]
-          }`}
+          className={` relative h-[105px] ${bgStylePokemonType[pokemonData?.types[0]]}`}
         >
-          <Link to='/pokedex/' className="absolute -top-[100%] z-10 text-white bg-zinc-700 font-bold text-sm rounded-full  inline-block py-1 px-5 shadow-lg shadow-slate-800/60" >Go Back</Link>
+          <Link to='/pokedex/' className="absolute -top-[100%] z-10 text-white dark:bg-neutral-200 bg-neutral-700 font-bold text-sm rounded-full  inline-block py-1 px-5 shadow-lg dark:shadow-neutral-200/60 shadow-neutral-800/60 dark:text-black hover:scale-125" >Go Back</Link>
           <img
-            className="h-[200%] absolute left-1/2 -translate-x-1/2 bottom-0"
+            className="h-[200%] absolute left-1/2 -translate-x-1/2 bottom-0 hover:scale-110"
             src={pokemonData?.image}
             alt=""
           />
+          
+          
+          
+          <img class="w-16 h-1w-16 absolute left-20 -translate-x-1/2 top-28 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 sm:left-24 sm:top-4 sm:w-20 sm:h-1w-20 hover:scale-110" src={ImageStylePokemonType[pokemonData?.types[0]]} alt="Bordered avatar"/>
+
+          
         </header>
 
         <section className="sm:px-24 ">
