@@ -15,9 +15,13 @@ export const BarProgresStat = ({stat,type}) => {
             <h5>{stat.name}</h5>
             <span>{stat.value}/255</span>
         </section>
-        <div className="h-6 bg-slate-300 rounded-md">
-            <div style={{width: getPercentBarProgress(stat.value)}} className={`h-full ${bgStylePokemonType[type]} `}></div>
-        </div>
+        <div className="h-6 rounded-md bg-[#9eb2c2]">
+        <div
+          style={{ width: getPercentBarProgress(stat.value) }}
+          className={`h-full ${bgStylePokemonType[type]}  `}
+        ></div>
+      </div>
+        
 
     </article>
   )

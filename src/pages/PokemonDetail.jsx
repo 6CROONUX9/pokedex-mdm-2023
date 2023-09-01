@@ -17,7 +17,7 @@ export const PokemonDetail = () => {
   }, []);
 
   return (
-    <main className={` grid gap-8 max-h-full  max-w-[1190px] mx-auto p-2 py-28 bg-neutral-200 dark:bg-neutral-700 dark:text-white`}>
+    <main className={`font-fira-roboto grid gap-8 max-h-full  max-w-[1190px] mx-auto p-2 py-28 bg-neutral-200 dark:bg-neutral-700 dark:text-white`}>
       <article >
         
         <header
@@ -32,7 +32,7 @@ export const PokemonDetail = () => {
           
           
           
-          <img class="w-16 h-1w-16 absolute left-20 -translate-x-1/2 top-28 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 sm:left-24 sm:top-4 sm:w-20 sm:h-1w-20 hover:scale-110" src={ImageStylePokemonType[pokemonData?.types[0]]} alt="Bordered avatar"/>
+          <img className="w-16 h-1w-16 absolute left-20 -translate-x-1/2 top-28 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 sm:left-24 sm:top-4 sm:w-20 sm:h-1w-20 hover:scale-110" src={ImageStylePokemonType[pokemonData?.types[0]]} alt="Bordered avatar"/>
 
           
         </header>

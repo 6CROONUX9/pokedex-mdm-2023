@@ -29,7 +29,7 @@ export const Home = () => {
   }, [])
 
   return (
-    <main className="relative min-h-screen grid grid-rows-[1fr_auto] bg-[url(/bg-diaPng.gif)] dark:bg-[url(/bg-darkPng.gif)] bg-no-repeat bg-cover bg-center  ">
+    <main className="font-fira-roboto relative min-h-screen grid grid-rows-[1fr_auto] bg-[url(/bg-diaPng.gif)] dark:bg-[url(/bg-darkPng.gif)] bg-no-repeat bg-cover bg-center  ">
       
       
       
@@ -84,7 +84,7 @@ export const Home = () => {
       </article> 
 
       {/* parte principal inferior*/}
-      <img class="w-1h-14 h-14 absolute left-1/2 -translate-x-1/2 bottom-[20px] z-50  rounded-full" src={ImageStylePokemonType[homeIdPokemons?.types[0]]} alt="Rounded avatar"></img>
+      <img class="w-1h-14 h-14 absolute left-[135px]     sm:left-1/2 sm:-translate-x-1/2 bottom-[20px] z-50  rounded-full" src={ImageStylePokemonType[homeIdPokemons?.types[0]]} alt="Rounded avatar"></img>
       <FooterPokeball />
     </main>
     

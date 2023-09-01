@@ -19,12 +19,12 @@ export const HeaderPokeball = ({ children }) => {
       document.documentElement.classList.remove("dark");
       localStorage.removeItem("dark");
       setEventsDark(false);
-      setEventIcono(<i className="bx bx-moon  text-blue-400 text-3xl "></i>);
+      setEventIcono(<i className="bx bx-moon  text-blue-400 text-[25px] sm:text-3xl "></i>);
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("dark", true);
       setEventsDark(true);
-      setEventIcono(<i className="bx bx-sun  text-yellow-400 text-3xl "></i>);
+      setEventIcono(<i className="bx bx-sun  text-yellow-400 text-[25px] sm:text-3xl "></i>);
     }
   };
 
@@ -33,9 +33,9 @@ export const HeaderPokeball = ({ children }) => {
 
   useEffect(() => {
     if (document.documentElement.classList.contains("dark")) {
-      setEventIcono(<i className="bx bx-moon  text-blue-400 text-3xl "></i>);
+      setEventIcono(<i className="bx bx-moon  text-blue-400 text-[25px] sm:text-3xl "></i>);
     } else {
-      setEventIcono(<i className="bx bx-sun  text-yellow-400 text-3xl "></i>);
+      setEventIcono(<i className="bx bx-sun  text-yellow-400 text-[25px] sm:text-3xl "></i>);
     }
   }, []);
   return (
@@ -50,17 +50,17 @@ export const HeaderPokeball = ({ children }) => {
         <div className="h-12 bg-black dark:bg-white relative  ">
           
 
-          <button
+        <button
             onClick={handleLogout}
-            className="mr-3 animate-bounce h-16 aspect-square bg-black  rounded-full absolute right-0 -translate-x-1/2 -top-8 border-[8px] border-white after:block after:content-[''] after:h-8 after:aspect-square after:bg-transparent after:rounded-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:border-4 after:border-black "
+            className="mr-3 animate-bounce h-10 w-10 aspect-square bg-black  rounded-full absolute right-0 -translate-x-1/2 -top-8 border-[8px] border-white after:block after:content-[''] after:h-8 after:aspect-square after:bg-transparent after:rounded-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:border-4 after:border-black sm:h-16 sm:w-16 "
           >
-            <i className="text-red-600  text-2xl bx bxs-log-in-circle bx-rotate-180"></i>
+            <i className="text-red-600 text-[25px] sm:text-3xl bx bxs-log-in-circle bx-rotate-180"></i>
           </button>
 
           {/* inicio de mi dark */}
           <button
             onClick={handleChangeDarkMode}
-            className="mr-3 animate-bounce h-16 aspect-square bg-black  rounded-full absolute right-20 -translate-x-[100px] -top-8 border-[8px] border-white after:block after:content-[''] after:h-8 after:aspect-square after:bg-transparent after:rounded-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:border-4 after:border-black "
+          className="mr-3 animate-bounce h-10 w-10 aspect-square bg-black  rounded-full absolute right-12 -translate-x-[100px] -top-8 border-[8px] border-white after:block after:content-[''] after:h-8 after:aspect-square after:bg-transparent after:rounded-full after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:border-4 after:border-black sm:h-16 sm:w-16 sm:right-20 "
           >
             {eventIcono}
           </button>

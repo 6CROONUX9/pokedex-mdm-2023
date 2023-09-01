@@ -10,7 +10,7 @@ export const Page404 = () => {
       {/* <img  className="w-screen h-screen" src="/images/page404.gif" alt="" /> */}
       
     </div>
-    <div className="  absolute top-[70px] text-center left-1/2 -translate-x-1/2">
+    <div className="  absolute top-[75px] text-center left-1/2 -translate-x-1/2 hover:scale-110">
       <img className="w-[screen] h-[200px]" src="/img404.png" alt="" />
     </div>
     

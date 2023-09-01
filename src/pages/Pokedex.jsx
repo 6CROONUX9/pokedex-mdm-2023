@@ -24,7 +24,7 @@ export const Pokedex = () => {
   );
 
   return (
-    <main className="bg-neutral-200 dark:bg-neutral-700  dark:text-white ">
+    <main className="font-fira-roboto bg-neutral-200 dark:bg-neutral-700  dark:text-white ">
       <section>
         <p className="text-center text-2xl font-bold pt-4 ">
           <span>Welcome <span className="text-red-500">{name}</span></span>
