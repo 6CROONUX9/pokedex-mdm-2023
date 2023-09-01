@@ -32,9 +32,9 @@ export const Home = () => {
     <main className="relative min-h-screen grid grid-rows-[1fr_auto] bg-[url(/bg-diaPng.gif)] dark:bg-[url(/bg-darkPng.gif)] bg-no-repeat bg-cover bg-center  ">
       
       
+      
 
-
-      <section className="flex flex-col justify-center items-center mx-2">
+      <section className="flex flex-col justify-center items-center mx-2 mb-8">
         <article>
           {/* seccion superior */}
           <div className="text-center mb-4">
