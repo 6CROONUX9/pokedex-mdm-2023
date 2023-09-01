@@ -84,7 +84,7 @@ export const Home = () => {
       </article> 
 
       {/* parte principal inferior*/}
-      <img class="w-1h-14 h-14 absolute left-[135px]     sm:left-1/2 sm:-translate-x-1/2 bottom-[20px] z-50  rounded-full" src={ImageStylePokemonType[homeIdPokemons?.types[0]]} alt="Rounded avatar"></img>
+      <img className="w-1h-14 h-14 absolute      left-1/2 -translate-x-1/2 bottom-[20px] z-50  rounded-full" src={ImageStylePokemonType[homeIdPokemons?.types[0]]} alt="Rounded avatar"></img>
       <FooterPokeball />
     </main>
     
