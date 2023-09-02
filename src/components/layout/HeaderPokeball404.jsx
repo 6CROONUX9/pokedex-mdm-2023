@@ -1,16 +1,19 @@
 import { useDispatch } from "react-redux";
 import { logout } from "../../store/slices/trainer.slice";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeaderPokeball404 = () => {
      //Dark
   const [eventsDark404, setEventsDark404] = useState(false);
   const [eventIcono404, setEventIcono404] = useState(null);
 
-  const dispatch = useDispatch();
+
+  const navigate = useNavigate()
+ 
 
   const handleLogout = () => {
-    dispatch(logout());
+    navigate("/");
   };
 
   //inicio de mi dark
