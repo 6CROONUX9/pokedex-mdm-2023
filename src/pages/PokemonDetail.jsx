@@ -65,7 +65,7 @@ export const PokemonDetail = () => {
                 {
                   
                 pokemonData?.types.map((type) => (
-                  <span key={type} className={` flex items-center justify-center px-5 py-1 text-white text-md font-semibold border-solid border-2 border-gray-200 rounded ${bgStylePokemonType[type]} shadow-lg shadow-slate-700/20 `}>
+                  <span key={type} className={` flex items-center justify-center px-5 py-1 text-white text-md font-semibold border-solid border-2 border-gray-200 rounded ${bgStylePokemonType[type]} shadow-lg shadow-slate-700/20 dark:shadow-slate-200/20 `}>
                     {type}
                   </span>
                 ))}
@@ -78,7 +78,7 @@ export const PokemonDetail = () => {
                   Abilities
                   </h2>
                   {pokemonData?.abilities.map((abilitie) => (
-                    <span key={abilitie} className="px-5 py-1 text-md font-semibold border-solid border-2 border-gray-200 rounded shadow-lg shadow-slate-700/20" >
+                    <span key={abilitie} className="px-5 py-1 text-md font-semibold border-solid border-2 border-gray-200 rounded shadow-lg shadow-slate-700/20 dark:shadow-slate-200/20" >
                       {abilitie}
                     </span>
                   ))}

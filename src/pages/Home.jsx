@@ -37,7 +37,7 @@ export const Home = () => {
       <section className="flex flex-col justify-center items-center mx-2 mb-8">
         <article>
           {/* seccion superior */}
-          <div className="text-center mb-4">
+          <div className="text-center mb-4 mt-4">
             <img src="/images/banner.png" alt="" />
           </div>
 
